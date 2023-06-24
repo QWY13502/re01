@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>端午游玩</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(223, 219, 219);
+      }
+
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+
+      .baise {
+        background-color: white;
+      }
+
+      .flex1 {
+        flex: 1;
+      }
+
+      .culumn {
+        flex-direction: column;
+      }
+
+      .mg8 {
+        margin: 8px;
+      }
+
+      .mgr8 {
+        margin-right: 8px;
+      }
+
+      .mgt8 {
+        margin-top: 8px;
+      }
+
+      .yinying {
+        box-shadow: 2px 2px 5px rgb(204, 202, 202);
+      }
+      .daohang {
+        padding: 10px 20px;
+        font-size: 15px;
+        border-bottom: 2px solid rgb(231, 231, 231);
+        color: rgb(102, 66, 66);
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2" class="baise yinying">
+      <!-- 头像 -->
+      <div
+        style="
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 2px solid rgb(204, 202, 202);
+        "
+        class="flex"
+      >
+        <img src="/img/logo.jpg" width="40px" height="40px" alt="touxiang" />
+        <div style="margin-left: 10px">秋雾月</div>
+      </div>
+      <!-- 文字 -->
+      <div class="flex1">
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex culumn">
+      <!--头部栏-->
+      <div style="height: 60px; z-index: 1" class="baise yinying"></div>
+      <!--内容区-->
+      <div style="overflow: auto" class="flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="column mg8">
+          <!--数据-->
+          <div class="flex">
+            <div
+              style="height: 100px; border-radius: 15px"
+              class="baise yinying flex1 mgr8"
+            ></div>
+            <div
+              style="height: 100px; border-radius: 15px"
+              class="baise yinying flex1 mgr8"
+            ></div>
+            <div
+              style="height: 100px; border-radius: 15px"
+              class="baise yinying flex1 mgr8"
+            ></div>
+            <div
+              style="height: 100px; border-radius: 15px"
+              class="baise yinying flex1"
+            ></div>
+          </div>
+          <!--内容-->
+          <div>
+            <div
+              style="height: 160px; border-radius: 15px"
+              class="baise yinying mgt8"
+            ></div>
+            <div
+              style="height: 160px; border-radius: 15px"
+              class="baise yinying mgt8"
+            ></div>
+            <div
+              style="height: 160px; border-radius: 15px"
+              class="baise yinying mgt8"
+            ></div>
+            <div
+              style="height: 160px; border-radius: 15px"
+              class="baise yinying mgt8"
+            ></div>
+            <div
+              style="height: 160px; border-radius: 15px"
+              class="baise yinying mgt8"
+            ></div>
+            <div
+              style="height: 160px; border-radius: 15px"
+              class="baise yinying mgt8"
+            ></div>
+            <div
+              style="height: 160px; border-radius: 15px"
+              class="baise yinying mgt8"
+            ></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="column mgr8 mgt8">
+          <!--提示区-->
+          <div
+            style="height: 150px; border-radius: 15px"
+            class="baise yinying"
+          ></div>
+          <!--消息区-->
+          <div
+            style="height: 300px; border-radius: 15px"
+            class="baise yinying mgt8"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
